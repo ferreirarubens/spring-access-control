@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: access-control
+  cloud:
+    config:
+      uri: http://localhost:9090
