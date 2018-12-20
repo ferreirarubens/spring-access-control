@@ -16,7 +16,7 @@ public interface IService<T extends GenericEntity> {
 
 	boolean delete(T t);
 
-	T findById(Integer id);
+	T findById(long id);
 
 	void deleteAll();
 
@@ -24,5 +24,5 @@ public interface IService<T extends GenericEntity> {
 
 	List<T> findAll();
 
-	boolean deleteById(Integer id);
+	boolean deleteById(long id);
 }

@@ -5,7 +5,7 @@ import java.util.List;
 import com.ferreirarubens.accesscontrol.model.Profile;
 
 /**
- * @author Renatão
+ * @author rubens.ferreira
  *
  */
 public interface IProfileService extends IService<Profile>{

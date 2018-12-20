@@ -34,7 +34,7 @@ public abstract class GenericEntity implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY, generator = "base_gen")
-	private Integer id;
+	private long id;
 
 	@Column(name = "dt_insert")
 	@JsonSerialize(using = LocalDateTimeSerializer.class)
@@ -58,12 +58,12 @@ public abstract class GenericEntity implements Serializable {
 	
 	public GenericEntity() { }
 
-	public Integer getId() {
-		return id == null ? 0 : id;
+	public long getId() {
+		return id;
 	}
 
-	public void setId(Integer id) {
-		this.id = id == null ? 0 : id;
+	public void setId(long id) {
+		this.id = id;
 	}
 	
 	public LocalDateTime getDateInsert() {
@@ -102,7 +102,7 @@ public abstract class GenericEntity implements Serializable {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		result = prime * result + (int) (id ^ (id >>> 32));
 		return result;
 	}
 
@@ -115,11 +115,9 @@ public abstract class GenericEntity implements Serializable {
 		if (getClass() != obj.getClass())
 			return false;
 		GenericEntity other = (GenericEntity) obj;
-		if (id == null) {
-			if (other.id != null)
-				return false;
-		} else if (!id.equals(other.id))
+		if (id != other.id)
 			return false;
 		return true;
 	}
+
 }

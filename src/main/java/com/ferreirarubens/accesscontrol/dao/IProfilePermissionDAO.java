@@ -10,7 +10,7 @@ import org.springframework.data.repository.query.Param;
 import com.ferreirarubens.accesscontrol.model.ProfilePermission;
 
 /**
- * @author Renatão
+ * @author rubens.ferreira
  *
  */
 public interface IProfilePermissionDAO extends JpaRepository<ProfilePermission, Serializable> {

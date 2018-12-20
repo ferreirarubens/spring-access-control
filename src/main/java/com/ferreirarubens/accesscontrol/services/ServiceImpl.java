@@ -39,7 +39,7 @@ public abstract class ServiceImpl<T extends GenericEntity, IDao extends CrudRepo
 	}
 
 	@Override
-	public T findById(Integer id) {
+	public T findById(long id) {
 		return dao.findById(id).get();
 	}
 
@@ -59,7 +59,7 @@ public abstract class ServiceImpl<T extends GenericEntity, IDao extends CrudRepo
 	}
 
 	@Override
-	public boolean deleteById(Integer id) {
+	public boolean deleteById(long id) {
 		dao.deleteById(id);
 		return dao.findById(id) == null ? true : false;
 	}

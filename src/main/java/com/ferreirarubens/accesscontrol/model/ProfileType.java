@@ -12,7 +12,7 @@ import javax.persistence.Table;
 import com.ferreirarubens.accesscontrol.model.enums.ProfileCategoryEnum;
 
 /**
- * @author Renatão
+ * @author rubens.ferreira
  *
  */
 @Entity

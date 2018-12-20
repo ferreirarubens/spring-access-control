@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.ferreirarubens.accesscontrol.model.Permission;
 
 /**
- * @author Renatão
+ * @author rubens.ferreira
  *
  */
 public interface IPermissionDAO extends JpaRepository<Permission, Serializable> {

@@ -11,7 +11,7 @@ import com.ferreirarubens.accesscontrol.model.ProfileType;
 import com.ferreirarubens.accesscontrol.services.interfaces.IProfileTypeService;
 
 /**
- * @author Renatão
+ * @author rubens.ferreira
  *
  */
 @Service

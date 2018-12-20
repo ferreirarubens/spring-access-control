@@ -17,7 +17,7 @@ import com.fasterxml.jackson.annotation.JsonProperty.Access;
 import com.ferreirarubens.accesscontrol.model.interfaces.Authenticated;
 
 /**
- * @author Renatão
+ * @author rubens.ferreira
  *
  */
 @Entity

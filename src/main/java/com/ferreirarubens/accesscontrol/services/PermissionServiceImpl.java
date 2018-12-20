@@ -11,7 +11,7 @@ import com.ferreirarubens.accesscontrol.model.Permission;
 import com.ferreirarubens.accesscontrol.services.interfaces.IPermissionService;
 
 /**
- * @author Renatão
+ * @author rubens.ferreira
  *
  */
 @Service

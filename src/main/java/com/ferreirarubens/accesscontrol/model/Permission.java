@@ -7,8 +7,6 @@ import javax.persistence.Entity;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
-import org.hibernate.annotations.Type;
-
 /**
  * @author rubens_ferreira
  *

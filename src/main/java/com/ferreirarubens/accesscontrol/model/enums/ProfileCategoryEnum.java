@@ -9,8 +9,6 @@ package com.ferreirarubens.accesscontrol.model.enums;
  */
 public enum ProfileCategoryEnum implements IEnumDeserializer<ProfileCategoryEnum>{
 	
-	STUDENT("STUDENT"),
-	SECRETARY("SECRETARY"),
 	ADMIN("ADMIN");
 
 	private final String text;
