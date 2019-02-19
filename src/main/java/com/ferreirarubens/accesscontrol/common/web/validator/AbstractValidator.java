@@ -15,9 +15,9 @@ import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.ferreirarubens.accesscontrol.common.model.GenericEntity;
+import com.ferreirarubens.accesscontrol.common.model.enums.ProfileCategoryEnum;
 import com.ferreirarubens.accesscontrol.common.web.validator.util.StringValidator;
-import com.ferreirarubens.accesscontrol.model.GenericEntity;
-import com.ferreirarubens.accesscontrol.model.enums.ProfileCategoryEnum;
 
 /**
  * @author rubens.ferreira

@@ -3,10 +3,10 @@ package com.ferreirarubens.accesscontrol.common.config.data.serializers;
 import java.io.IOException;
 import java.util.Objects;
 
-import com.ferreirarubens.accesscontrol.model.User;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.SerializerProvider;
 import com.fasterxml.jackson.databind.ser.std.StdSerializer;
+import com.ferreirarubens.accesscontrol.common.model.User;
 
 public class UserInsertUpdateSerializer extends StdSerializer<User> {
 

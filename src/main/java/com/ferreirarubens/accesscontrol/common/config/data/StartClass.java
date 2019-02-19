@@ -9,8 +9,8 @@ import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
 
-import com.ferreirarubens.accesscontrol.model.Profile;
-import com.ferreirarubens.accesscontrol.model.User;
+import com.ferreirarubens.accesscontrol.common.model.Profile;
+import com.ferreirarubens.accesscontrol.common.model.User;
 import com.ferreirarubens.accesscontrol.services.interfaces.IProfileService;
 import com.ferreirarubens.accesscontrol.services.interfaces.IUserService;
 

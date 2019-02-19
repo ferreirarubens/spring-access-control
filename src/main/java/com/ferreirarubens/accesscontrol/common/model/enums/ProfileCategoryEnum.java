@@ -1,10 +1,10 @@
 /**
  * 
  */
-package com.ferreirarubens.accesscontrol.model.enums;
+package com.ferreirarubens.accesscontrol.common.model.enums;
 
 /**
- * @author rubens.ferreira
+ * @author Ferreira Rubens <rubensdefrancaferreira@gmail.com>
  *
  */
 public enum ProfileCategoryEnum implements IEnumDeserializer<ProfileCategoryEnum>{

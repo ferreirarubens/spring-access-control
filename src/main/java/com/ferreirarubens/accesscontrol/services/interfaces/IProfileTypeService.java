@@ -2,7 +2,7 @@ package com.ferreirarubens.accesscontrol.services.interfaces;
 
 import java.util.List;
 
-import com.ferreirarubens.accesscontrol.model.ProfileType;
+import com.ferreirarubens.accesscontrol.common.model.ProfileType;
 
 /**
  * @author rubens.ferreira

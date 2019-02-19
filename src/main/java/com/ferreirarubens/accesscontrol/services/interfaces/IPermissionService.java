@@ -1,6 +1,6 @@
 package com.ferreirarubens.accesscontrol.services.interfaces;
 
-import com.ferreirarubens.accesscontrol.model.Permission;
+import com.ferreirarubens.accesscontrol.common.model.Permission;
 
 /**
  * @author rubens.ferreira

@@ -7,9 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.ferreirarubens.accesscontrol.common.model.Profile;
+import com.ferreirarubens.accesscontrol.common.model.ProfilePermission;
 import com.ferreirarubens.accesscontrol.dao.IProfileDAO;
-import com.ferreirarubens.accesscontrol.model.Profile;
-import com.ferreirarubens.accesscontrol.model.ProfilePermission;
 import com.ferreirarubens.accesscontrol.services.interfaces.IProfilePermissionService;
 import com.ferreirarubens.accesscontrol.services.interfaces.IProfileService;
 

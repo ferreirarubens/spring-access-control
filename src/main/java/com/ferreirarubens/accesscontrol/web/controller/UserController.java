@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ferreirarubens.accesscontrol.common.handler.exceptions.ValidationException;
-import com.ferreirarubens.accesscontrol.model.User;
+import com.ferreirarubens.accesscontrol.common.model.User;
 import com.ferreirarubens.accesscontrol.services.interfaces.IUserService;
 import com.ferreirarubens.accesscontrol.web.validator.UserValidator;
 

@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
 
+import com.ferreirarubens.accesscontrol.common.model.User;
 import com.ferreirarubens.accesscontrol.common.web.validator.AbstractValidator;
-import com.ferreirarubens.accesscontrol.model.User;
 import com.ferreirarubens.accesscontrol.services.interfaces.IUserService;
 
 /**

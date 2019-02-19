@@ -8,8 +8,8 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.ferreirarubens.accesscontrol.model.User;
-import com.ferreirarubens.accesscontrol.model.enums.ProfileCategoryEnum;
+import com.ferreirarubens.accesscontrol.common.model.User;
+import com.ferreirarubens.accesscontrol.common.model.enums.ProfileCategoryEnum;
 
 /**
  * @author rubens.ferreira

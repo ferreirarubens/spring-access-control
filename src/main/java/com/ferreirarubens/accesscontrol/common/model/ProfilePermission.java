@@ -1,4 +1,4 @@
-package com.ferreirarubens.accesscontrol.model;
+package com.ferreirarubens.accesscontrol.common.model;
 
 import java.util.ArrayList;
 import java.util.List;

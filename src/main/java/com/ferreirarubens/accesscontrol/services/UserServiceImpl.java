@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.ferreirarubens.accesscontrol.common.model.User;
+import com.ferreirarubens.accesscontrol.common.model.enums.ProfileCategoryEnum;
 import com.ferreirarubens.accesscontrol.dao.IUserDAO;
-import com.ferreirarubens.accesscontrol.model.User;
-import com.ferreirarubens.accesscontrol.model.enums.ProfileCategoryEnum;
 import com.ferreirarubens.accesscontrol.services.interfaces.IUserService;
 
 /**

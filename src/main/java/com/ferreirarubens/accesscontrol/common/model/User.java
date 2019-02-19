@@ -1,4 +1,4 @@
-package com.ferreirarubens.accesscontrol.model;
+package com.ferreirarubens.accesscontrol.common.model;
 
 import java.util.Collection;
 import java.util.Objects;
@@ -14,10 +14,9 @@ import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonProperty.Access;
-import com.ferreirarubens.accesscontrol.model.interfaces.Authenticated;
 
 /**
- * @author rubens.ferreira
+ * @author Ferreira Rubens <rubensdefrancaferreira@gmail.com>
  *
  */
 @Entity
@@ -26,9 +25,6 @@ import com.ferreirarubens.accesscontrol.model.interfaces.Authenticated;
 @AttributeOverrides({ @AttributeOverride(name = "id", column = @Column(name = "id_user")) })
 public class User extends GenericEntity implements Authenticated {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	@Column(name = "ds_login", nullable = false, length = 50)

@@ -1,4 +1,4 @@
-package com.ferreirarubens.accesscontrol.model;
+package com.ferreirarubens.accesscontrol.common.model;
 
 import javax.persistence.AttributeOverride;
 import javax.persistence.AttributeOverrides;
@@ -9,7 +9,7 @@ import javax.persistence.Enumerated;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
-import com.ferreirarubens.accesscontrol.model.enums.ProfileCategoryEnum;
+import com.ferreirarubens.accesscontrol.common.model.enums.ProfileCategoryEnum;
 
 /**
  * @author rubens.ferreira

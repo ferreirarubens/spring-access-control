@@ -2,7 +2,7 @@ package com.ferreirarubens.accesscontrol.services.interfaces;
 
 import java.util.List;
 
-import com.ferreirarubens.accesscontrol.model.GenericEntity;
+import com.ferreirarubens.accesscontrol.common.model.GenericEntity;
 
 /**
  * @author rubens_ferreira
