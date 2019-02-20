@@ -5,7 +5,7 @@ import java.io.Serializable;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 /**
- * @author rubens_ferreira
+ * @auhtor Ferreira Rubens <rubensdefrancaferreira@gmail.com>
  *
  */
 @JsonPropertyOrder({"errorType", "message", "exception"})

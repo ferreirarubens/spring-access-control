@@ -7,7 +7,7 @@ import javax.persistence.AttributeConverter;
 import javax.persistence.Converter;
 
 /**
- * @author rubens_ferreira
+ * @author Ferreira Rubens <rubensdefrancaferreira@gmail.com>
  *
  */
 @Converter(autoApply = true)

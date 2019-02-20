@@ -12,7 +12,7 @@ import com.ferreirarubens.accesscontrol.dao.IUserDAO;
 import com.ferreirarubens.accesscontrol.services.interfaces.IUserService;
 
 /**
- * @author rubens_ferreira
+ * @auhtor Ferreira Rubens <rubensdefrancaferreira@gmail.com>
  *
  */
 @Service

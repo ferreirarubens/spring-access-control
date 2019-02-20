@@ -3,7 +3,7 @@ package com.ferreirarubens.accesscontrol.common.handler.exceptions.validation;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 /**
- * @author rubens_ferreira
+ * @auhtor Ferreira Rubens <rubensdefrancaferreira@gmail.com>
  *
  */
 @JsonIgnoreProperties(ignoreUnknown = true)

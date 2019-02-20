@@ -3,7 +3,7 @@ package com.ferreirarubens.accesscontrol.common.handler.exceptions;
 import org.springframework.validation.Errors;
 
 /**
- * @author rubens_ferreira
+ * @auhtor Ferreira Rubens <rubensdefrancaferreira@gmail.com>
  *
  */
 @SuppressWarnings("serial")

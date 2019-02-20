@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Primary;
 
 
 /**
- * @author rubens_ferreira
+ * Ferreira Rubens <rubensdefrancaferreira@gmail.com>
  *
  */
 @Configuration

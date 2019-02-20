@@ -5,7 +5,7 @@ import java.util.List;
 import com.ferreirarubens.accesscontrol.common.model.GenericEntity;
 
 /**
- * @author rubens_ferreira
+ * @auhtor Ferreira Rubens <rubensdefrancaferreira@gmail.com>
  *
  */
 public interface IService<T extends GenericEntity> {

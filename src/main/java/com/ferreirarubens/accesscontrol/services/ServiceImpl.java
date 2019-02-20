@@ -12,7 +12,7 @@ import com.ferreirarubens.accesscontrol.common.model.GenericEntity;
 import com.ferreirarubens.accesscontrol.services.interfaces.IService;
 
 /**
- * @author rubens_ferreira
+ * @auhtor Ferreira Rubens <rubensdefrancaferreira@gmail.com>
  *
  */
 @Service

@@ -25,13 +25,13 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 /**
- * @author rubens_ferreira
+ * @auhtor Ferreira Rubens <rubensdefrancaferreira@gmail.com>
  *
  */
 @Entity
 @AttributeOverrides({ @AttributeOverride(name = "id", column = @Column(name = "id_profile")) })
 @SequenceGenerator(initialValue = 1, name = "base_gen", sequenceName = "profile_seq")
-@Table(name = "profile")
+@Table(name = "profile", schema = "access_control")
 public class Profile extends GenericEntity {
 
 	private static final long serialVersionUID = 1L;

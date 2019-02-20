@@ -8,13 +8,13 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 /**
- * @author rubens_ferreira
+ * @auhtor Ferreira Rubens <rubensdefrancaferreira@gmail.com>
  *
  */
 @Entity
 @AttributeOverrides({ @AttributeOverride(name = "id", column = @Column(name = "id_permission")) })
 @SequenceGenerator(initialValue = 1, name = "base_gen", sequenceName = "permission_seq")
-@Table(name = "permission")
+@Table(name = "permission", schema = "access_control")
 public class Permission extends GenericEntity {
 
 	private static final long serialVersionUID = 1L;

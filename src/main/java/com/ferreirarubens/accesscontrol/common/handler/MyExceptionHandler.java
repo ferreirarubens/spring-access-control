@@ -18,7 +18,7 @@ import com.ferreirarubens.accesscontrol.common.handler.exceptions.ValidationExce
 import com.ferreirarubens.accesscontrol.common.handler.exceptions.validation.ErrorValidationException;
 
 /**
- * @author rubens_ferreira
+ * @auhtor Ferreira Rubens <rubensdefrancaferreira@gmail.com>
  *
  */
 @ControllerAdvice

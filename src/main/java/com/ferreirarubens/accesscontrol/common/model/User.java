@@ -21,7 +21,7 @@ import com.fasterxml.jackson.annotation.JsonProperty.Access;
  */
 @Entity
 @SequenceGenerator(initialValue = 1, name = "base_gen", sequenceName = "user_seq")
-@Table(name = "users")
+@Table(name = "users", schema = "access_control")
 @AttributeOverrides({ @AttributeOverride(name = "id", column = @Column(name = "id_user")) })
 public class User extends GenericEntity implements Authenticated {
 

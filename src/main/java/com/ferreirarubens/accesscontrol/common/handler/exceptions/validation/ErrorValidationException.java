@@ -11,7 +11,7 @@ import com.ferreirarubens.accesscontrol.common.handler.exceptions.BaseException;
 import com.ferreirarubens.accesscontrol.common.handler.exceptions.ValidationException;
 
 /**
- * @author rubens_ferreira
+ * Ferreira Rubens <rubensdefrancaferreira@gmail.com>
  *
  */
 @JsonPropertyOrder({"errorType", "message", "code", "fieldErrors"})
