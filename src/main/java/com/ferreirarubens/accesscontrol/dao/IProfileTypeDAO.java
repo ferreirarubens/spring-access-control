@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.ferreirarubens.accesscontrol.common.model.ProfileType;
 
 /**
- * @author rubens.ferreira
+ * @auhtor Ferreira Rubens <rubensdefrancaferreira@gmail.com>
  *
  */
 public interface IProfileTypeDAO extends JpaRepository<ProfileType, Serializable> {

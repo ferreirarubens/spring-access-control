@@ -7,6 +7,8 @@ import javax.persistence.AttributeOverride;
 import javax.persistence.AttributeOverrides;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
@@ -14,6 +16,7 @@ import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonProperty.Access;
+import com.ferreirarubens.accesscontrol.common.model.enums.Gender;
 
 /**
  * @author Ferreira Rubens <rubensdefrancaferreira@gmail.com>
@@ -21,7 +24,7 @@ import com.fasterxml.jackson.annotation.JsonProperty.Access;
  */
 @Entity
 @SequenceGenerator(initialValue = 1, name = "base_gen", sequenceName = "user_seq")
-@Table(name = "users", schema = "access_control")
+@Table(name = "user", schema = "access_control")
 @AttributeOverrides({ @AttributeOverride(name = "id", column = @Column(name = "id_user")) })
 public class User extends GenericEntity implements Authenticated {
 
@@ -43,17 +46,28 @@ public class User extends GenericEntity implements Authenticated {
 	@JoinColumn(name = "id_profile", nullable = false)
 	private Profile profile;
 
-	public User() {	}
-	
-	public User(String login, String password, String name, String cpf, Profile profile) {
+	@ManyToOne
+	@JoinColumn(name = "id_congregation", nullable = false)
+	private Congregation congregation;
+
+	@Enumerated(EnumType.STRING)
+	@Column(nullable = false, name = "tp_gender")
+	private Gender gender;
+
+	@Column(name = "nr_access_level", nullable = true)
+	private int accessLevel;
+
+	public User() {
+	}
+
+	public User(String login, String password, String name, String cpf, Profile profile, Congregation congregation) {
 		this.login = login;
 		this.password = password;
 		this.name = name;
 		this.cpf = cpf;
 		this.profile = profile;
+		this.congregation = congregation;
 	}
-
-
 
 	public String getLogin() {
 		return login;
@@ -101,6 +115,30 @@ public class User extends GenericEntity implements Authenticated {
 			return getProfile().getRoles();
 		}
 		return null;
+	}
+
+	public Congregation getCongregation() {
+		return congregation;
+	}
+
+	public void setCongregation(Congregation congregation) {
+		this.congregation = congregation;
+	}
+
+	public Gender getGender() {
+		return gender;
+	}
+
+	public void setGender(Gender gender) {
+		this.gender = gender;
+	}
+
+	public int getAccessLevel() {
+		return accessLevel;
+	}
+
+	public void setAccessLevel(int accessLevel) {
+		this.accessLevel = accessLevel;
 	}
 
 }

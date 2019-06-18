@@ -31,7 +31,7 @@ public class StartClass implements ApplicationListener<ContextRefreshedEvent> {
 			System.out.println("Nenhum encontrado");
 		} else {
 			User user = new User("rubens", encoder().encode("password"), "Rubens", "06221683475",
-					profiles.get(0));
+					profiles.get(0), null);
 			
 			userService.save(user);
 		}

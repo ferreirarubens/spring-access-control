@@ -11,7 +11,7 @@ import com.ferreirarubens.accesscontrol.dao.IProfileTypeDAO;
 import com.ferreirarubens.accesscontrol.services.interfaces.IProfileTypeService;
 
 /**
- * @author rubens.ferreira
+ * @auhtor Ferreira Rubens <rubensdefrancaferreira@gmail.com>
  *
  */
 @Service

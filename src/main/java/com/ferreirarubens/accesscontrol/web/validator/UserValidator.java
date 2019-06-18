@@ -12,7 +12,7 @@ import com.ferreirarubens.accesscontrol.common.web.validator.AbstractValidator;
 import com.ferreirarubens.accesscontrol.services.interfaces.IUserService;
 
 /**
- * @author rubens.ferreira
+ * @auhtor Ferreira Rubens <rubensdefrancaferreira@gmail.com>
  *
  */
 @Component

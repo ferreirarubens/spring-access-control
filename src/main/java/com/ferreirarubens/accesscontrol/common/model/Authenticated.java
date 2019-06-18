@@ -4,7 +4,7 @@
 package com.ferreirarubens.accesscontrol.common.model;
 
 /**
- * @author rubens.ferreira
+ * @auhtor Ferreira Rubens <rubensdefrancaferreira@gmail.com>
  *
  */
 public interface Authenticated {

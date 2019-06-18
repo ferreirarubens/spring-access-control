@@ -20,7 +20,7 @@ import com.ferreirarubens.accesscontrol.common.model.enums.ProfileCategoryEnum;
 import com.ferreirarubens.accesscontrol.common.web.validator.util.StringValidator;
 
 /**
- * @author rubens.ferreira
+ * @auhtor Ferreira Rubens <rubensdefrancaferreira@gmail.com>
  *
  */
 public abstract class AbstractValidator<T extends GenericEntity> implements Validator {

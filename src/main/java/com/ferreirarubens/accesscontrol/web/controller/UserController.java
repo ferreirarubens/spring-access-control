@@ -29,7 +29,7 @@ import com.ferreirarubens.accesscontrol.services.interfaces.IUserService;
 import com.ferreirarubens.accesscontrol.web.validator.UserValidator;
 
 /**
- * @author rubens.ferreira
+ * @auhtor Ferreira Rubens <rubensdefrancaferreira@gmail.com>
  *
  */
 @RestController

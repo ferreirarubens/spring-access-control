@@ -3,7 +3,7 @@ package com.ferreirarubens.accesscontrol.services.interfaces;
 import com.ferreirarubens.accesscontrol.common.model.Permission;
 
 /**
- * @author rubens.ferreira
+ * @auhtor Ferreira Rubens <rubensdefrancaferreira@gmail.com>
  *
  */
 public interface IPermissionService extends IService<Permission>{

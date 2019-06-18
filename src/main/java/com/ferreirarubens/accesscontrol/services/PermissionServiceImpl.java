@@ -11,7 +11,7 @@ import com.ferreirarubens.accesscontrol.dao.IPermissionDAO;
 import com.ferreirarubens.accesscontrol.services.interfaces.IPermissionService;
 
 /**
- * @author rubens.ferreira
+ * @auhtor Ferreira Rubens <rubensdefrancaferreira@gmail.com>
  *
  */
 @Service

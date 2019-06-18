@@ -7,7 +7,7 @@ import java.util.Objects;
 import java.util.regex.Pattern;
 
 /**
- * @author rubens.ferreira
+ * @auhtor Ferreira Rubens <rubensdefrancaferreira@gmail.com>
  *
  */
 public class StringValidator {
@@ -16,7 +16,7 @@ public class StringValidator {
 		NUMBER_AND_LETTER_UPPERCASE("^(?=.*[A-Z])(?=.*[0-9])[A-Z 0-9]+$"),
 		ALPHANUMERIC_UPPERCASE_NOT_SPACE("^[A-Z0-9]+$"),
 		NUMBER_AND_LETTER_UPPERCASE_NOT_SPACE("^(?=.*[A-Z])(?=.*[0-9])[A-Z0-9]+$"),
-		NAME_LASTNAME("(([a-zA-ZÀ-ÿ]{2,})\\s+)+[a-zA-ZÀ-ÿ]+$"),
+		NAME_LASTNAME("(([a-zA-Zï¿½-ï¿½]{2,})\\s+)+[a-zA-Zï¿½-ï¿½]+$"),
 		VALID_EMAIL("^([a-z0-9_.+-])+\\@(([a-z0-9-])+\\.)+([a-z0-9]{2,4})+$"),
 		PASSWORD_VALIDATION("^(?=.*[^a-zA-Z])(?=.*[a-z])(?=.*[A-Z])\\S{8,}$"), SPACE_VALIDATION("^.*[\\s].*$");
 

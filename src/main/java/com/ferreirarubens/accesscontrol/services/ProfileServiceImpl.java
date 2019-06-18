@@ -14,7 +14,7 @@ import com.ferreirarubens.accesscontrol.services.interfaces.IProfilePermissionSe
 import com.ferreirarubens.accesscontrol.services.interfaces.IProfileService;
 
 /**
- * @author rubens.ferreira
+ * @auhtor Ferreira Rubens <rubensdefrancaferreira@gmail.com>
  *
  */
 @Service

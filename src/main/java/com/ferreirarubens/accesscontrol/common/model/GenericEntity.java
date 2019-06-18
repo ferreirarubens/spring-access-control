@@ -18,7 +18,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
- 
+
 /**
  * @author Ferreira Rubens <rubensdefrancaferreira@gmail.com>
  *
@@ -55,8 +55,12 @@ public abstract class GenericEntity implements Serializable {
 	@JoinColumn(name = "id_user_update")
 	@JsonSerialize(using = UserInsertUpdateSerializer.class)
 	private User userUpdate;
-	
-	public GenericEntity() { }
+
+	@Column(name = "yn_actived", nullable = true)
+	private boolean actived;
+
+	public GenericEntity() {
+	}
 
 	public long getId() {
 		return id;
@@ -65,7 +69,7 @@ public abstract class GenericEntity implements Serializable {
 	public void setId(long id) {
 		this.id = id;
 	}
-	
+
 	public LocalDateTime getDateInsert() {
 		return dateInsert;
 	}
@@ -96,6 +100,14 @@ public abstract class GenericEntity implements Serializable {
 
 	public void setUserUpdate(User userUpdate) {
 		this.userUpdate = userUpdate;
+	}
+
+	public boolean isActived() {
+		return actived;
+	}
+
+	public void setActived(boolean actived) {
+		this.actived = actived;
 	}
 
 	@Override

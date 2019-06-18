@@ -12,7 +12,7 @@ import com.ferreirarubens.accesscontrol.common.model.User;
 import com.ferreirarubens.accesscontrol.common.model.enums.ProfileCategoryEnum;
 
 /**
- * @author rubens.ferreira
+ * @auhtor Ferreira Rubens <rubensdefrancaferreira@gmail.com>
  *
  */
 public interface IUserDAO extends JpaRepository<User, Serializable> {
