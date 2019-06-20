@@ -1,5 +1,7 @@
-package com.ferreirarubens.accesscontrol.common.config.data;
+package com.ferreirarubens.accesscontrol.util;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +13,7 @@ import org.springframework.stereotype.Component;
 
 import com.ferreirarubens.accesscontrol.common.model.Profile;
 import com.ferreirarubens.accesscontrol.common.model.User;
+import com.ferreirarubens.accesscontrol.common.model.enums.Gender;
 import com.ferreirarubens.accesscontrol.services.interfaces.IProfileService;
 import com.ferreirarubens.accesscontrol.services.interfaces.IUserService;
 
@@ -30,10 +33,13 @@ public class StartClass implements ApplicationListener<ContextRefreshedEvent> {
 		if (profiles.isEmpty()) {
 			System.out.println("Nenhum encontrado");
 		} else {
-			User user = new User("rubens", encoder().encode("password"), "Rubens", "06221683475",
-					profiles.get(0), null);
+			User user = new User("rubens", encoder().encode("123456"), "Rubens", "06221683475",
+					profiles.get(0), Gender.MALE);
+			User user2 = new User("teste", encoder().encode("123456"), "Teste", "06221683478",
+					profiles.get(0), Gender.MALE);
 			
-			userService.save(user);
+			userService.save(Arrays.asList(user, user2));
+			System.out.println("Cadastrados com sucesso: (senha) -> 123456");
 		}
 	}
 	

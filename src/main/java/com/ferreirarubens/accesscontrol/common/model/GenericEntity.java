@@ -56,8 +56,8 @@ public abstract class GenericEntity implements Serializable {
 	@JsonSerialize(using = UserInsertUpdateSerializer.class)
 	private User userUpdate;
 
-	@Column(name = "yn_actived", nullable = true)
-	private boolean actived;
+	@Column(name = "is_active", nullable = true)
+	private boolean active = true;
 
 	public GenericEntity() {
 	}
@@ -102,12 +102,12 @@ public abstract class GenericEntity implements Serializable {
 		this.userUpdate = userUpdate;
 	}
 
-	public boolean isActived() {
-		return actived;
+	public boolean isActive() {
+		return active;
 	}
 
-	public void setActived(boolean actived) {
-		this.actived = actived;
+	public void setActive(boolean active) {
+		this.active = active;
 	}
 
 	@Override

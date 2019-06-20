@@ -22,7 +22,7 @@ public class Permission extends GenericEntity {
 	@Column(name = "nm_permission", nullable = false, length = 50)
 	private String name;
 
-	@Column(name = "yn_crud")
+	@Column(name = "is_crud")
 	private boolean crud;
 
 	public Permission() {

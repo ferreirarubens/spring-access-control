@@ -46,10 +46,6 @@ public class User extends GenericEntity implements Authenticated {
 	@JoinColumn(name = "id_profile", nullable = false)
 	private Profile profile;
 
-	@ManyToOne
-	@JoinColumn(name = "id_congregation", nullable = false)
-	private Congregation congregation;
-
 	@Enumerated(EnumType.STRING)
 	@Column(nullable = false, name = "tp_gender")
 	private Gender gender;
@@ -60,13 +56,13 @@ public class User extends GenericEntity implements Authenticated {
 	public User() {
 	}
 
-	public User(String login, String password, String name, String cpf, Profile profile, Congregation congregation) {
+	public User(String login, String password, String name, String cpf, Profile profile, Gender gender) {
 		this.login = login;
 		this.password = password;
 		this.name = name;
 		this.cpf = cpf;
 		this.profile = profile;
-		this.congregation = congregation;
+		this.gender = gender;
 	}
 
 	public String getLogin() {
@@ -115,14 +111,6 @@ public class User extends GenericEntity implements Authenticated {
 			return getProfile().getRoles();
 		}
 		return null;
-	}
-
-	public Congregation getCongregation() {
-		return congregation;
-	}
-
-	public void setCongregation(Congregation congregation) {
-		this.congregation = congregation;
 	}
 
 	public Gender getGender() {
