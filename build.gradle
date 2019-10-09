@@ -3,11 +3,10 @@ buildscript {
 		springBootVersion = '2.1.0.RELEASE'
 	}
 	repositories {
-		jcenter()
+		mavenCentral()
 	}
 	dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-		classpath "org.jfrog.buildinfo:build-info-extractor-gradle:latest.release"
 	}
 }
 
@@ -15,7 +14,6 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
-apply plugin: "com.jfrog.artifactory"
 
 group = 'com.ferreirarubens'
 version = '0.0.1-SNAPSHOT'
@@ -23,13 +21,7 @@ sourceCompatibility = 1.8
 
 repositories {
 	mavenCentral()
-	maven {
-        +url "http://localhost:8081/artifactory/common" // The Artifactory (preferably virtual) repository to resolve from
-        credentials {               // Optional resolver credentials (leave out to use anonymous resolution)
-            username = "admin" // Artifactory user name
-            password = "password" // Password or API Key
-        }
-    }
+	maven { url "https://repo.spring.io/milestone" }
 }
 
 ext {
