@@ -7,6 +7,7 @@ import javax.persistence.AttributeOverride;
 import javax.persistence.AttributeOverrides;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.ForeignKey;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
@@ -22,17 +23,17 @@ import javax.persistence.UniqueConstraint;
 @SequenceGenerator(initialValue = 1, name = "base_gen", sequenceName = "profile_permission_seq")
 @AttributeOverrides({ @AttributeOverride(name = "id", column = @Column(name = "id_profile_permission")) })
 @Table(name = "profile_permission", schema = "access_control", uniqueConstraints = {
-		@UniqueConstraint(columnNames = { "id_profile", "id_permission" }) })
+		@UniqueConstraint(columnNames = { "id_profile", "id_permission" }, name = "profile_permission_uk") })
 public class ProfilePermission extends GenericEntity {
 
 	private static final long serialVersionUID = 1L;
 
 	@ManyToOne
-	@JoinColumn(name = "id_profile")
+	@JoinColumn(name = "id_profile", foreignKey = @ForeignKey(name = "profile_fk"))
 	private Profile profile;
 
 	@ManyToOne
-	@JoinColumn(name = "id_permission", nullable = false)
+	@JoinColumn(name = "id_permission", nullable = false, foreignKey = @ForeignKey(name = "permission_fk"))
 	private Permission permission;
 
 	@Column(name = "ck_read")

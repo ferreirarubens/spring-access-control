@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 import javax.persistence.Column;
+import javax.persistence.ForeignKey;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -47,12 +48,12 @@ public abstract class GenericEntity implements Serializable {
 	private LocalDateTime dateUpdate;
 
 	@ManyToOne
-	@JoinColumn(name = "id_user_insert")
+	@JoinColumn(name = "id_user_insert", foreignKey = @ForeignKey(name = "user_insert_fk"))
 	@JsonSerialize(using = UserInsertUpdateSerializer.class)
 	private User userInsert;
 
 	@ManyToOne
-	@JoinColumn(name = "id_user_update")
+	@JoinColumn(name = "id_user_update", foreignKey = @ForeignKey(name = "user_update_fk"))
 	@JsonSerialize(using = UserInsertUpdateSerializer.class)
 	private User userUpdate;
 

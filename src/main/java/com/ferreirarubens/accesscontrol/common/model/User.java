@@ -9,6 +9,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.ForeignKey;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
@@ -43,7 +44,7 @@ public class User extends GenericEntity implements Authenticated {
 	private String cpf;
 
 	@ManyToOne
-	@JoinColumn(name = "id_profile", nullable = false)
+	@JoinColumn(name = "id_profile", nullable = false, foreignKey = @ForeignKey(name = "profile_fk"))
 	private Profile profile;
 
 	@Enumerated(EnumType.STRING)
