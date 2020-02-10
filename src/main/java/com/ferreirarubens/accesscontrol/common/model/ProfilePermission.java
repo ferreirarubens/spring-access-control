@@ -20,7 +20,7 @@ import javax.persistence.UniqueConstraint;
  *
  */
 @Entity
-@SequenceGenerator(initialValue = 1, name = "base_gen", sequenceName = "profile_permission_seq")
+@SequenceGenerator(initialValue = 1, name = "base_gen", sequenceName = "profile_permission_seq", schema = "access_control")
 @AttributeOverrides({ @AttributeOverride(name = "id", column = @Column(name = "id_profile_permission")) })
 @Table(name = "profile_permission", schema = "access_control", uniqueConstraints = {
 		@UniqueConstraint(columnNames = { "id_profile", "id_permission" }, name = "profile_permission_uk") })

@@ -1,0 +1,5 @@
+databaseChangeLog:
+  - author: ferreirarubens
+  - include:
+      file: ./create_permissions.sql
+      relativeToChangelogFile: true

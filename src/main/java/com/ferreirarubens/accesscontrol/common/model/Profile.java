@@ -30,7 +30,7 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
  */
 @Entity
 @AttributeOverrides({ @AttributeOverride(name = "id", column = @Column(name = "id_profile")) })
-@SequenceGenerator(initialValue = 1, name = "base_gen", sequenceName = "profile_seq")
+@SequenceGenerator(initialValue = 1, name = "base_gen", sequenceName = "profile_seq", schema = "access_control")
 @Table(name = "profile", schema = "access_control")
 public class Profile extends GenericEntity {
 

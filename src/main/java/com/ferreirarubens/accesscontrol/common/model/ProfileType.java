@@ -16,7 +16,7 @@ import com.ferreirarubens.accesscontrol.common.model.enums.ProfileCategoryEnum;
  *
  */
 @Entity
-@SequenceGenerator(initialValue = 1, name = "base_gen", sequenceName = "profile_type_seq")
+@SequenceGenerator(initialValue = 1, name = "base_gen", sequenceName = "profile_type_seq", schema = "access_control")
 @Table(name = "profile_type", schema = "access_control")
 @AttributeOverrides({ @AttributeOverride(name = "id", column = @Column(name = "id_profile_type")) })
 public class ProfileType extends GenericEntity {

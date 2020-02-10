@@ -1,4 +1,5 @@
 databaseChangeLog:
+  - author: ferreirarubens
   - include:
       file: ./initial_schema.sql
       relativeToChangelogFile: true

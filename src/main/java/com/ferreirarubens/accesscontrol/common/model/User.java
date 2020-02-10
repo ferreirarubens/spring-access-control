@@ -24,7 +24,7 @@ import com.ferreirarubens.accesscontrol.common.model.enums.Gender;
  *
  */
 @Entity
-@SequenceGenerator(initialValue = 1, name = "base_gen", sequenceName = "user_seq")
+@SequenceGenerator(initialValue = 1, name = "base_gen", sequenceName = "user_seq", schema = "access_control")
 @Table(name = "user", schema = "access_control")
 @AttributeOverrides({ @AttributeOverride(name = "id", column = @Column(name = "id_user")) })
 public class User extends GenericEntity implements Authenticated {

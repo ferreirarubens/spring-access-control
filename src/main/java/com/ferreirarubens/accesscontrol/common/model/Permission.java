@@ -6,7 +6,6 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
-import javax.persistence.UniqueConstraint;
 
 /**
  * @auhtor Ferreira Rubens <rubensdefrancaferreira@gmail.com>
@@ -14,7 +13,7 @@ import javax.persistence.UniqueConstraint;
  */
 @Entity
 @AttributeOverrides({ @AttributeOverride(name = "id", column = @Column(name = "id_permission")) })
-@SequenceGenerator(initialValue = 1, name = "base_gen", sequenceName = "permission_seq")
+@SequenceGenerator(initialValue = 1, name = "base_gen", sequenceName = "permission_seq", schema = "access_control")
 @Table(name = "permission", schema = "access_control")
 public class Permission extends GenericEntity {
 
